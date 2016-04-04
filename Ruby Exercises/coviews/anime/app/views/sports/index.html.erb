@@ -1,0 +1,6 @@
+<h1>Hello</h1>
+<a href="/sports/new">New Sport</a>
+
+<% @sports.each do |s| %>
+	<p><a href="/sports/<%= s.id %>"><%= s.name %></a></p>
+<% end %>

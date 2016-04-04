@@ -1,0 +1,8 @@
+<h1>Edit</h1>
+<form action="/sports/<%= @sport.id %>" method="post">
+	<input type="hidden" name="_method" value="patch">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<input type="text" name="name" value="<%= @sport.name %>">
+	<input type="submit" value="Update Sport">
+</form>
+<a href="/sports">Back</a>

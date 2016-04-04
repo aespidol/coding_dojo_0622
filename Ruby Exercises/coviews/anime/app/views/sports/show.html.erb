@@ -1,0 +1,7 @@
+<h1><%= @sport.name %></h1>
+<a href="/sports/<%= @sport.id %>/edit"><button>Edit</button></a>
+<form action="/sports/<%= @sport.id %>" method="post">
+	<input type="hidden" name="_method" value="delete">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<input type="submit" value="delete">
+</form>
